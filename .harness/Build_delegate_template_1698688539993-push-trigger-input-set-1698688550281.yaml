@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_delegate_template_1698688539993-push-trigger-input-set
+  identifier: Build_delegate_template_1698688539993pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: testproject
+  pipeline:
+    identifier: Build_delegate_template_1698688539993
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
