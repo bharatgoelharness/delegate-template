@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_delegate_template_1698688539993
+  name: Build delegate-template
+  orgIdentifier: default
+  projectIdentifier: testproject
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github
+        repoName: bharatgoelharness/delegate-template
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
