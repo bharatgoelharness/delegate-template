@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_delegate_template_1698688539993-pr-trigger-input-set
+  identifier: Build_delegate_template_1698688539993prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: testproject
+  pipeline:
+    identifier: Build_delegate_template_1698688539993
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
